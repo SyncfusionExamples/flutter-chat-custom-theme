@@ -101,7 +101,7 @@ class _ChatState extends State<Chat> {
           fontSize: 16.0,
         ),
         // Incoming content and shape of header of message
-        incomingBubbleContentBackgroundColor: const Color(0xffA1D6CB),
+        incomingMessageBackgroundColor: const Color(0xffA1D6CB),
         incomingContentTextStyle: _buildTextStyle(_textTheme.bodyLarge!,
             color: Colors.black, fontSize: 13.0, fontWeight: FontWeight.w600),
         incomingPrimaryHeaderTextStyle: _buildTextStyle(
@@ -115,11 +115,11 @@ class _ChatState extends State<Chat> {
           color: Colors.blueGrey[900],
           fontSize: 11.0,
         ),
-        incomingBubbleContentShape: RoundedRectangleBorder(
+        incomingMessageShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
         // Outgoing content and shape of header of message
-        outgoingBubbleContentBackgroundColor:
+        outgoingMessageBackgroundColor:
             const Color(0xffFF7F3E).withValues(alpha: 0.8),
         outgoingContentTextStyle: _buildTextStyle(
           _textTheme.bodyLarge!,
@@ -138,7 +138,7 @@ class _ChatState extends State<Chat> {
           color: Colors.black,
           fontSize: 11.0,
         ),
-        outgoingBubbleContentShape: RoundedRectangleBorder(
+        outgoingMessageShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(40),
         ),
       ),
